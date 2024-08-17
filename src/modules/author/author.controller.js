@@ -45,7 +45,7 @@ export const deleteauthorid = async(req,res)=>{
 
 // pagination
 
-export const getauthor11 = async(req,res)=>{
+export const pagination = async(req,res)=>{
     const { page = 1 , limit=2 } = req.query
     const totalauthors = await Author.countDocuments()
     const author = await Author.find().skip((page -1) * limit).limit(((limit)))

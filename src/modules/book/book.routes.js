@@ -8,7 +8,7 @@ bookrouter.get('/getbooks',bookcontroller.getbook)
 bookrouter.get('/:id',bookcontroller.getbookid)
 bookrouter.patch('/:id',bookcontroller.updatebookid)
 bookrouter.delete('/:id',bookcontroller.deletebookid)
-bookrouter.get('/',bookcontroller.getbook11)
+bookrouter.get('/',bookcontroller.pagination)
 bookrouter.get('/search',bookcontroller.search)
 
 

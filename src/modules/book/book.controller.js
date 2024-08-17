@@ -43,7 +43,7 @@ export const updatebookid = async (req,res)=>{
 
 // pagination
 
-export const getbook11 = async(req,res)=>{
+export const pagination = async(req,res)=>{
     const { page , limit } = req.query
     const totalbooks = await Book.countDocuments()
     const book = await Book.find().skip((page -1) * limit).limit((parseInt(limit)))
