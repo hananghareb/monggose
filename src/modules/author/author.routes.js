@@ -7,6 +7,14 @@ authorrouter.get('/getauthors',authorcontroller.getauthor)
 authorrouter.get('/:id',authorcontroller.getauthorid)
 authorrouter.patch('/:id',authorcontroller.updateauthorid)
 authorrouter.delete('/:id',authorcontroller.deleteauthorid)
+authorrouter.get('/',authorcontroller.getauthor11)
+authorrouter.get('/search',authorcontroller.search)
+
+
+
+
+
+
 
 
 

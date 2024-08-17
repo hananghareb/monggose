@@ -8,7 +8,7 @@ const authorschema = new Schema({
     bio:{
         type:String
     },
-
+ 
     birthDate:{
         type:Date
     },
@@ -22,3 +22,4 @@ const authorschema = new Schema({
 })
 
  export const Author = model('Author',authorschema)
+                                                        
