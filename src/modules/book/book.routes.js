@@ -5,11 +5,12 @@ const bookrouter = Router()
 
 bookrouter.post('/',bookcontroller.addbook)
 bookrouter.get('/getbooks',bookcontroller.getbook)
-bookrouter.get('/:id',bookcontroller.getbookid)
 bookrouter.patch('/:id',bookcontroller.updatebookid)
 bookrouter.delete('/:id',bookcontroller.deletebookid)
 bookrouter.get('/',bookcontroller.pagination)
 bookrouter.get('/search',bookcontroller.search)
+bookrouter.get('/:id',bookcontroller.getbookid)
+
 
 
 

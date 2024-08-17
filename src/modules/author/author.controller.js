@@ -60,14 +60,11 @@ export const pagination = async(req,res)=>{
 // search functionality
 
 export const search =async (req,res)=>{
-    const { page = 1 , limit=2 , name , bio } = req.query
-    
+    const { page = 1 , limit=2 , name , bio } = req.query   
     const query = {}
     if(name){
-
     query.name = { $regex: name, $options:"i"} 
     }
-    
 if(bio){
     query.bio = { $regex:bio , $options:"i"}
 }
